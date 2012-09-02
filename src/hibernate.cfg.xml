@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.1.149/fr_dev</property>
+        <property name="connection.username">fr</property>
+        <property name="connection.password">fr</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <mapping resource="com/fr/client/data/types/UserRoutine.hbm.xml"/>
+		<mapping resource="com/fr/client/data/types/UserExercise.hbm.xml"/>
+		<mapping resource="com/fr/client/data/types/SessionExerciseData.hbm.xml"/>
+		<mapping resource="com/fr/client/data/types/SessionExercise.hbm.xml"/>
+		<mapping resource="com/fr/client/data/types/RoutineSessionData.hbm.xml"/>
+		<mapping resource="com/fr/client/data/types/RoutineSession.hbm.xml"/>
+		<mapping resource="com/fr/client/data/types/ExerciseUOM.hbm.xml"/>
+    </session-factory>
+
+</hibernate-configuration>

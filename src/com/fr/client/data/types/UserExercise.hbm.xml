@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fr.client.data.types.UserExercise" table="UserExercise">
+        <id name="userExerciseID" type="long">
+            <generator class="native"/>
+        </id>
+        <property name="userID" type="long" />
+        <property name="exerciseName" type="string" />
+        <property name="exerciseType" type="string" />
+        <property name="display" type="boolean" />
+    </class>
+
+</hibernate-mapping>

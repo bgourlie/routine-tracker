@@ -1,0 +1,158 @@
+/*svntest
+main bg: #FFE0BF
+secondary bg: #FFC17F
+link: #0058b7
+border: #FF8300
+border 2: #5B88B7 
+*/
+body {
+    font-family: arial, sans-serif;
+    background-color: #ffffff;
+}
+
+input, textarea, button, td, select {
+    font-family: arial, sans-serif;
+    font-size: 100%;
+}
+
+.fr-Panel {
+    border: 3px solid #FF8300;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.fr-RecordTable {
+    width: 100%;
+}
+
+.fr-RecordTableHeader {
+    background-color: #0033CC;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-family: arial, sans-serif;
+    font-size: 110%;
+}
+
+.optionTable {
+
+}
+
+.gwt-TabPanel {
+    width: 100%;
+}
+
+.gwt-TabBar {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.gwt-TabBarFirst {
+    border-bottom: 1px solid black;
+}
+
+.gwt-TabBarRest {
+    border-bottom: 1px solid black;
+}
+
+.gwt-TabBarItem {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #FFC17F;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.gwt-TabBarItem-selected {
+    font-weight: bold;
+    background-color: #FFE0BF;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.gwt-TabPanelBottom {
+
+}
+
+.gwt-MenuBar {
+    border-bottom: 1px solid black;
+    background-color: #FFC17F;
+    margin-bottom: 10px;
+}
+
+.gwt-MenuBar .gwt-MenuItem {
+    font-size: 80%;
+    margin-bottom: 3px;
+}
+
+.gwt-MenuBar .gwt-MenuItem-selected {
+    background-color: #5B88B7;
+    cursor: pointer;
+}
+
+.gwt-DialogBox {
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #FFC17F;
+    width: 300px;
+}
+
+.gwt-DialogBox .Caption {
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #5B88B7;
+}
+
+.fr-RoutineEditor {
+    border: 1px solid black;
+    margin: 5px;
+    width: 650px;
+}
+
+.alternatingRow1 {
+    background-color: #CCCCFF;
+}
+
+.alternatingRow2 {
+    background-color: #9999FF;
+}
+
+#fr-Routine_mainColumn {
+    width: 800px;
+    margin: 5px;
+}
+
+.FRButton {
+    border: 1px solid black;
+    background-color: #FFFFFF;
+}
+/*
+shared attributes
+*/
+.FRTextBox-inactive, .FRTextBox-active {
+    border: 1px solid #A0A0AF;
+
+}
+
+.FRTextBox-unlabeled{
+	color:black;
+}
+
+.FRTextBox-labeled{
+	color:#A8A8A8; /* light gray */
+}
+
+.FRHome-strip {
+    height: auto;
+    width: 100%;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+    background-image: url('FRHome-stripBackground.png');
+    background-repeat: repeat;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fr.client.data.types.SessionExercise" table="SessionExercise">
+        <id name="sessionExerciseID" type="long">
+            <generator class="native"/>
+        </id>
+        <property name="routineSessionID" type="long" />
+        <property name="userExerciseID" type="long" />
+        <property name="orderIndex" type="int" />
+        <property name="target" type="long" />
+        <property name="note" type="string" />
+    </class>
+
+</hibernate-mapping>

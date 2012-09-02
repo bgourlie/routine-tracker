@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.fr.client.data.types.RoutineSessionData" table="RoutineSessionData">
+        <id name="routineSessionDataID" type="long">
+            <generator class="native"/>
+        </id>
+        <property name="routineSessionID" type="long" />
+        <property name="recordedAt" type="timestamp" />
+        <property name="status" type="string" />
+        <property name="note" type="string" />
+    </class>
+
+</hibernate-mapping>
